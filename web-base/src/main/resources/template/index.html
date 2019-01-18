@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>中断-编辑订单</title>
+</head>
+<body>
+
+<div class="form-group overflow">
+    <div class="form-group">
+        <h5>原始文件</h5>
+        <div class="form-group overflow">
+            <div class="w-80 fl font-blue">
+                <span style="line-height: 30px" id="fileName">11111111111111.zip</span></div>
+            <div class="w-20 fr tr">
+                <input type="button" class="btn btn-default" onclick="$('#btn_selectFile').click()" value="替换文件">
+                <input style="display: none" type="file" multiple id="btn_selectFile"/>
+                <input type="hidden" name="dataFiles" id="dataFiles"/>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <h5>备注</h5>
+        <textarea class="form-control" style="height: 180px;"></textarea>
+    </div>
+    <div class="tc form-group">
+        <input type="button" class="btn btn-danger" value="取消">
+        <input type="button" class="btn btn-success" value="重新保存">
+    </div>
+
+</div>
